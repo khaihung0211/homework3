@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/dialog_background">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number Guessing Game - ✕ Game Over"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Message -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You used all your attempts"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="12dp" />
+
+    <!-- My number -->
+    <TextView
+        android:id="@+id/tvMyNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My number was: 2815"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Your guesses label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your guesses:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Guesses list -->
+    <TextView
+        android:id="@+id/tvGuesses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10:46, 5926, 2209, 7322, 2235, 1428, 3928"
+        android:textSize="12sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Play again question -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Would you like to play again?"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:text="NO"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_gray_rounded"
+            android:textAllCaps="true" />
+
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="YES"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_pink_rounded"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+</LinearLayout>
